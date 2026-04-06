@@ -133,16 +133,59 @@ go tool pprof -http=:8080 cpu.prof
 
 ---
 
+### 11 — Advanced Testing & Fuzzing
+**Goal:** Write tests like a senior engineer. Find bugs the fuzzer finds for you.
+
+| File | Topic |
+|------|-------|
+| `01_testing_patterns_test.go` | Table-driven, parallel, helpers, TestMain, cleanup, golden files, race detector |
+| `02_fuzz_mock_test.go` | Fuzzing (Go 1.18+), interface mocking without frameworks, clock injection |
+
+**Key commands:**
+```bash
+go test -v -race ./11-advanced-testing/
+go test -fuzz=FuzzParseEmail -fuzztime=30s ./11-advanced-testing/
+```
+
+---
+
+### 12 — Build Tags, CGo, Linker Tricks
+**Goal:** Master the Go toolchain beyond `go build`.
+
+| File | Topic |
+|------|-------|
+| `01_build_system.go` | Build constraints, cross-compilation, -ldflags version injection, go:embed, CGo basics, build modes, compiler directives |
+
+---
+
+### 13 — Networking & Custom Protocols
+**Goal:** Build TCP/HTTP systems that handle real-world network conditions.
+
+| File | Topic |
+|------|-------|
+| `01_networking.go` | Length-prefixed framing, HTTP timeout architecture, connection pooling, SSE streaming, TCP keep-alive, line-based protocols |
+
+---
+
+### 14 — Error Mastery
+**Goal:** Handle errors like a god — from sentinel to structured to multi-error.
+
+| File | Topic |
+|------|-------|
+| `01_errors.go` | Sentinel errors, domain errors, validation builder, errors.Join, wrapping chains, errors.Is/As, HTTP mapping, stack traces, anti-patterns |
+
+---
+
 ## Learning Order (Recommended)
 
 ```
 01 Memory Model ──→ 08 Runtime & Scheduler ──→ 02 Advanced Concurrency
        ↓                                              ↓
-05 Interface Internals ──→ 04 Advanced Generics ──→ 07 Advanced Patterns
+14 Error Mastery ──→ 05 Interfaces ──→ 04 Generics ──→ 07 Patterns
        ↓                                              ↓
-03 Reflection & Unsafe ──→ 09 Code Generation   ──→ 06 Performance Profiling
-                                                       ↓
-                                               10 Production Systems
+03 Reflection & Unsafe ──→ 09 Code Generation   ──→ 06 Performance
+       ↓                                              ↓
+12 Build System ──→ 13 Networking ──→ 11 Testing ──→ 10 Production Systems
 ```
 
 ## Quick Reference
@@ -154,8 +197,11 @@ go tool pprof -http=:8080 cpu.prof
 | Build a worker pool | 07 (worker pool pattern) |
 | Profile CPU/memory | 06 (pprof, benchmarks) |
 | Design clean APIs | 05 (interfaces, functional options) |
-| Handle errors properly | 10 (AppError, errors.Is/As) |
+| Handle errors properly | 14 (domain errors, errors.Is/As, wrapping) |
 | Write generic code | 04 (constraints, data structures) |
 | Inspect types at runtime | 03 (reflection) |
 | Generate boilerplate | 09 (AST, templates) |
+| Write production tests | 11 (table-driven, fuzzing, mocking) |
+| Cross-compile / embed files | 12 (build tags, -ldflags, go:embed) |
+| Build TCP/HTTP servers | 13 (framing, timeouts, connection pools) |
 | Ship to production | 10 (shutdown, logging, middleware) |
