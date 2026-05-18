@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <!-- ============================================================
+         SECTION 1: PROJECT COORDINATES
+         Think of this as your project's "passport" — unique identity
+         ============================================================ -->
+    <modelVersion>4.0.0</modelVersion>
+
+    <!--
+        groupId    = Your organization (like a package name, reversed domain)
+        artifactId = Your project name
+        version    = Current version
+
+        Together they form a UNIQUE ID: com.learn:maven-basics:1.0.0
+        This is how other projects reference YOUR project.
+    -->
+    <groupId>com.learn</groupId>
+    <artifactId>maven-basics</artifactId>
+    <version>1.0.0</version>
+
+    <!--
+        packaging = What gets built
+        jar  = Java Archive (default, runnable library)
+        war  = Web Archive (for deploying to Tomcat/server)
+        pom  = Parent POM (no code, just config)
+    -->
+    <packaging>jar</packaging>
+
+    <name>Maven Basics Demo</name>
+    <description>Learning Maven fundamentals for Spring Boot</description>
+
+
+    <!-- ============================================================
+         SECTION 2: PROPERTIES
+         Variables you can reuse throughout the POM.
+         ============================================================ -->
+    <properties>
+        <!-- Source code is Java 17 -->
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <!-- Define versions in one place — change here, applies everywhere -->
+        <gson.version>2.11.0</gson.version>
+        <junit.version>5.10.2</junit.version>
+    </properties>
+
+
+    <!-- ============================================================
+         SECTION 3: DEPENDENCIES
+         The libraries your project needs.
+         Maven downloads them automatically from Maven Central.
+         ============================================================ -->
+    <dependencies>
+
+        <!--
+            DEPENDENCY ANATOMY:
+            groupId    = Who made it (Google for Gson)
+            artifactId = The library name
+            version    = Which version to use
+            scope      = WHEN is it available? (see below)
+        -->
+
+        <!-- Gson: Google's JSON library (used at compile time AND runtime) -->
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>${gson.version}</version>
+            <!-- scope defaults to "compile" — available everywhere -->
+        </dependency>
+
+        <!-- JUnit 5: Testing framework -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+            <!--
+                scope=test means:
+                  ✅ Available in src/test/java
+                  ❌ NOT available in src/main/java
+                  ❌ NOT included in the final JAR
+
+                SCOPE CHEAT SHEET:
+                  compile  (default) → Available everywhere, included in JAR
+                  test     → Only for tests
+                  provided → Available at compile, but NOT in JAR (server provides it)
+                  runtime  → Not at compile, but available at runtime
+            -->
+        </dependency>
+
+    </dependencies>
+
+
+    <!-- ============================================================
+         SECTION 4: BUILD CONFIGURATION
+         Customize how Maven compiles, tests, packages your project.
+         ============================================================ -->
+    <build>
+        <plugins>
+            <!-- Maven Compiler Plugin: controls Java version -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.13.0</version>
+                <configuration>
+                    <source>17</source>
+                    <target>17</target>
+                </configuration>
+            </plugin>
+
+            <!-- Maven JAR Plugin: makes the JAR executable -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.4.1</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>com.learn.App</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+
+            <!-- Surefire Plugin: runs tests with JUnit 5 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.2.5</version>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
