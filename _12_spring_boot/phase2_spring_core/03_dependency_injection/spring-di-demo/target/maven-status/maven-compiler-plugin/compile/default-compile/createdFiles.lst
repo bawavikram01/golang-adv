@@ -1,0 +1,10 @@
+com/learn/di/SmsSender.class
+com/learn/di/MessageSender.class
+com/learn/di/UserRepository.class
+com/learn/di/EmailSender.class
+com/learn/di/FieldService.class
+com/learn/di/SetterService.class
+com/learn/di/ConstructorService.class
+com/learn/di/PushSender.class
+com/learn/di/DiDemoApplication.class
+com/learn/di/MultiSenderService.class

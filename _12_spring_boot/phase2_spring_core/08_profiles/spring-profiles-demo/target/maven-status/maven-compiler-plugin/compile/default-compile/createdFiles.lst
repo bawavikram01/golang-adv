@@ -1,0 +1,8 @@
+com/learn/profiles/ConsoleNotificationService.class
+com/learn/profiles/DataSourceService.class
+com/learn/profiles/PostgresDataSourceService.class
+com/learn/profiles/H2DataSourceService.class
+com/learn/profiles/ProfilesDemoApp.class
+com/learn/profiles/SmsNotificationService.class
+com/learn/profiles/NotificationService.class
+com/learn/profiles/DefaultNotificationService.class

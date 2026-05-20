@@ -1,0 +1,5 @@
+/home/vikram/Learn/_12_spring_boot/phase2_spring_core/05_bean_scopes/spring-scopes-demo/src/main/java/com/learn/scopes/OrderServiceBroken.java
+/home/vikram/Learn/_12_spring_boot/phase2_spring_core/05_bean_scopes/spring-scopes-demo/src/main/java/com/learn/scopes/OrderServiceFixed.java
+/home/vikram/Learn/_12_spring_boot/phase2_spring_core/05_bean_scopes/spring-scopes-demo/src/main/java/com/learn/scopes/PrototypeService.java
+/home/vikram/Learn/_12_spring_boot/phase2_spring_core/05_bean_scopes/spring-scopes-demo/src/main/java/com/learn/scopes/ScopesDemoApp.java
+/home/vikram/Learn/_12_spring_boot/phase2_spring_core/05_bean_scopes/spring-scopes-demo/src/main/java/com/learn/scopes/SingletonService.java

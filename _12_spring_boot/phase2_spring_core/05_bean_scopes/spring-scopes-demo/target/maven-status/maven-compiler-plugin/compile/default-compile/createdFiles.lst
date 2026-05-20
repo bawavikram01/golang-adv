@@ -1,0 +1,5 @@
+com/learn/scopes/SingletonService.class
+com/learn/scopes/PrototypeService.class
+com/learn/scopes/OrderServiceBroken.class
+com/learn/scopes/OrderServiceFixed.class
+com/learn/scopes/ScopesDemoApp.class

@@ -1,0 +1,8 @@
+com/learn/aop/UserService.class
+com/learn/aop/AuditAspect.class
+com/learn/aop/Audited.class
+com/learn/aop/OrderService.class
+com/learn/aop/LoggingAspect.class
+com/learn/aop/TimingAspect.class
+com/learn/aop/AopDemoApp.class
+com/learn/aop/Timed.class
