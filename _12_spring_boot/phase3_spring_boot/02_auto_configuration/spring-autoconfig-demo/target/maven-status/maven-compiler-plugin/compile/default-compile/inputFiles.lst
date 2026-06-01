@@ -1,0 +1,5 @@
+/home/vikram/Learn/_12_spring_boot/phase3_spring_boot/02_auto_configuration/spring-autoconfig-demo/src/main/java/com/learn/autoconfig/AutoConfigDemoApp.java
+/home/vikram/Learn/_12_spring_boot/phase3_spring_boot/02_auto_configuration/spring-autoconfig-demo/src/main/java/com/learn/autoconfig/AutoConfigInspector.java
+/home/vikram/Learn/_12_spring_boot/phase3_spring_boot/02_auto_configuration/spring-autoconfig-demo/src/main/java/com/learn/autoconfig/ConditionalBeansConfig.java
+/home/vikram/Learn/_12_spring_boot/phase3_spring_boot/02_auto_configuration/spring-autoconfig-demo/src/main/java/com/learn/autoconfig/CustomJacksonConfig.java
+/home/vikram/Learn/_12_spring_boot/phase3_spring_boot/02_auto_configuration/spring-autoconfig-demo/src/main/java/com/learn/autoconfig/DemoController.java

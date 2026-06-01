@@ -1,0 +1,24 @@
+2026-05-21T16:10:28.202+05:30  INFO 659715 --- [logging-demo] [main] com.learn.logging.LoggingDemoApp         : Starting LoggingDemoApp v1.0.0 using Java 17.0.18 with PID 659715 (/home/vikram/Learn/_12_spring_boot/phase3_spring_boot/03_logging/spring-logging-demo/target/spring-logging-demo-1.0.0.jar started by vikram in /home/vikram/Learn/_12_spring_boot/phase3_spring_boot/03_logging/spring-logging-demo)
+2026-05-21T16:10:28.204+05:30 DEBUG 659715 --- [logging-demo] [main] com.learn.logging.LoggingDemoApp         : Running with Spring Boot v3.3.0, Spring v6.1.8
+2026-05-21T16:10:28.204+05:30  INFO 659715 --- [logging-demo] [main] com.learn.logging.LoggingDemoApp         : No active profile set, falling back to 1 default profile: "default"
+2026-05-21T16:10:29.023+05:30  INFO 659715 --- [logging-demo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-21T16:10:29.023+05:30  INFO 659715 --- [logging-demo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2026-05-21T16:10:29.066+05:30  INFO 659715 --- [logging-demo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-05-21T16:10:29.497+05:30  INFO 659715 --- [logging-demo] [main] com.learn.logging.LoggingDemoApp         : Started LoggingDemoApp in 1.768 seconds (process running for 2.152)
+2026-05-21T16:10:29.509+05:30 DEBUG 659715 --- [logging-demo] [main] com.learn.logging.StartupLogger          : This is DEBUG — development diagnostics
+2026-05-21T16:10:29.509+05:30  INFO 659715 --- [logging-demo] [main] com.learn.logging.StartupLogger          : This is INFO — important business events
+2026-05-21T16:10:29.510+05:30  WARN 659715 --- [logging-demo] [main] com.learn.logging.StartupLogger          : This is WARN — something unexpected but recoverable
+2026-05-21T16:10:29.510+05:30 ERROR 659715 --- [logging-demo] [main] com.learn.logging.StartupLogger          : This is ERROR — something broke!
+2026-05-21T16:10:59.115+05:30  INFO 659715 --- [logging-demo] [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-21T16:10:59.115+05:30  INFO 659715 --- [logging-demo] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-21T16:10:59.116+05:30  INFO 659715 --- [logging-demo] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-05-21T16:10:59.141+05:30  INFO 659715 --- [logging-demo] [http-nio-8082-exec-1] com.learn.logging.OrderController        : POST /api/orders — orderId=ORD-001, customer=Alice, amount=79.99
+2026-05-21T16:10:59.142+05:30 DEBUG 659715 --- [logging-demo] [http-nio-8082-exec-1] com.learn.logging.OrderService           : Entering placeOrder() with orderId=ORD-001, customer=Alice, amount=79.99
+2026-05-21T16:10:59.143+05:30  INFO 659715 --- [logging-demo] [http-nio-8082-exec-1] com.learn.logging.OrderService           : Order ORD-001 placed by Alice for $79.99
+2026-05-21T16:10:59.143+05:30 DEBUG 659715 --- [logging-demo] [http-nio-8082-exec-1] com.learn.logging.OrderService           : Exiting placeOrder() — returning confirmation for ORD-001
+2026-05-21T16:10:59.144+05:30 DEBUG 659715 --- [logging-demo] [http-nio-8082-exec-1] com.learn.logging.OrderService           : Processing payment of $79.99 for order ORD-001
+2026-05-21T16:10:59.144+05:30 DEBUG 659715 --- [logging-demo] [http-nio-8082-exec-1] com.learn.logging.OrderService           : Step 1: Validating card...
+2026-05-21T16:10:59.144+05:30 DEBUG 659715 --- [logging-demo] [http-nio-8082-exec-1] com.learn.logging.OrderService           : Step 2: Charging amount...
+2026-05-21T16:10:59.144+05:30 DEBUG 659715 --- [logging-demo] [http-nio-8082-exec-1] com.learn.logging.OrderService           : Step 3: Confirming with gateway...
+2026-05-21T16:10:59.144+05:30  INFO 659715 --- [logging-demo] [http-nio-8082-exec-1] com.learn.logging.OrderService           : Payment of $79.99 processed for order ORD-001
+2026-05-21T16:10:59.144+05:30  INFO 659715 --- [logging-demo] [http-nio-8082-exec-1] com.learn.logging.OrderController        : Response: status=success for order ORD-001

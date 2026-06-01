@@ -1,0 +1,5 @@
+com/learn/rest/controller/UserController.class
+com/learn/rest/controller/DemoController.class
+com/learn/rest/service/UserService.class
+com/learn/rest/model/User.class
+com/learn/rest/RestDemoApp.class
