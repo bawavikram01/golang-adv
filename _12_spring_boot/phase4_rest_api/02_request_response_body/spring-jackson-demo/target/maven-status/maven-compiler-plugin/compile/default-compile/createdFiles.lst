@@ -1,0 +1,12 @@
+com/learn/jackson/dto/CreateUserRequest.class
+com/learn/jackson/model/User.class
+com/learn/jackson/dto/OrderResponse.class
+com/learn/jackson/dto/UpdateUserRequest.class
+com/learn/jackson/controller/JacksonAnnotationController.class
+com/learn/jackson/controller/OrderController.class
+com/learn/jackson/dto/OrderRequest.class
+com/learn/jackson/config/JacksonConfig.class
+com/learn/jackson/dto/AddressDto.class
+com/learn/jackson/controller/UserController.class
+com/learn/jackson/dto/UserResponse.class
+com/learn/jackson/JacksonDemoApp.class

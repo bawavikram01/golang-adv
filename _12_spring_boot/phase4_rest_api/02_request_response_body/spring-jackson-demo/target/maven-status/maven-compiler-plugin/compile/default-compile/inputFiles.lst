@@ -1,0 +1,12 @@
+/home/vikram/Learn/_12_spring_boot/phase4_rest_api/02_request_response_body/spring-jackson-demo/src/main/java/com/learn/jackson/JacksonDemoApp.java
+/home/vikram/Learn/_12_spring_boot/phase4_rest_api/02_request_response_body/spring-jackson-demo/src/main/java/com/learn/jackson/config/JacksonConfig.java
+/home/vikram/Learn/_12_spring_boot/phase4_rest_api/02_request_response_body/spring-jackson-demo/src/main/java/com/learn/jackson/controller/JacksonAnnotationController.java
+/home/vikram/Learn/_12_spring_boot/phase4_rest_api/02_request_response_body/spring-jackson-demo/src/main/java/com/learn/jackson/controller/OrderController.java
+/home/vikram/Learn/_12_spring_boot/phase4_rest_api/02_request_response_body/spring-jackson-demo/src/main/java/com/learn/jackson/controller/UserController.java
+/home/vikram/Learn/_12_spring_boot/phase4_rest_api/02_request_response_body/spring-jackson-demo/src/main/java/com/learn/jackson/dto/AddressDto.java
+/home/vikram/Learn/_12_spring_boot/phase4_rest_api/02_request_response_body/spring-jackson-demo/src/main/java/com/learn/jackson/dto/CreateUserRequest.java
+/home/vikram/Learn/_12_spring_boot/phase4_rest_api/02_request_response_body/spring-jackson-demo/src/main/java/com/learn/jackson/dto/OrderRequest.java
+/home/vikram/Learn/_12_spring_boot/phase4_rest_api/02_request_response_body/spring-jackson-demo/src/main/java/com/learn/jackson/dto/OrderResponse.java
+/home/vikram/Learn/_12_spring_boot/phase4_rest_api/02_request_response_body/spring-jackson-demo/src/main/java/com/learn/jackson/dto/UpdateUserRequest.java
+/home/vikram/Learn/_12_spring_boot/phase4_rest_api/02_request_response_body/spring-jackson-demo/src/main/java/com/learn/jackson/dto/UserResponse.java
+/home/vikram/Learn/_12_spring_boot/phase4_rest_api/02_request_response_body/spring-jackson-demo/src/main/java/com/learn/jackson/model/User.java
